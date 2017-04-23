@@ -1,0 +1,118 @@
+#! /bin/bash
+
+# -e config -> svn co / fragen
+# für jede datei in config: fragen 
+# ja -> backup & link
+# 
+	
+home_path="$HOME"
+config_path="$home_path/config"
+backup_path="$home_path/backup"
+config_repos="svn+ssh://jjochen@takeouts.eu/home/jjochen/svnrepos/config"
+
+if [ -e $config_path ]; then
+	echo "$config_path existiert bereits"
+	exit 4
+fi
+ping -c 1 takeouts.eu >/dev/null 2>&1 || {
+	echo "ping wg fehlgeschlagen!"
+	exit 1
+}
+type svn >/dev/null 2>&1 || {
+	echo "kein svn gefunden!"
+	exit 2
+}
+if [ ! -e $backup_path ]
+then
+	mkdir $backup_path
+fi
+
+svn co $config_repos $config_path
+
+if [ ! -e $home_path ]
+then
+	echo "finde home verzeichnis nicht!?
+	exit 4
+fi
+if [ ! -e $config_path ]
+then
+	echo "svn co fehlgeschlagen!?
+	exit 3
+fi
+cd $config_path
+
+for file in $( ls -a );
+do
+	if [ "$file" != "." ] && [ "$file" != ".." ] && [ "$file" != ".svn" ]; then
+		if [ -e "$home_path/$file" ]
+		then
+			echo "$file already exists! backup and replace by link? (j/n)"
+			read opt
+			if [ "$opt" = "j" ]; then
+				mv $home_path/$file $backup_path/$file-$(date +%Y%m%d-%H%M%S)
+				ln -is $config_path/$file $home_path/$file
+			fi
+		else
+			echo "$file doesn't exist. link to it? (j/n)"
+			read opt
+			if [ "$opt" = "j" ]; then
+				ln -is $config_path/$file $home_path/$file
+			fi
+		fi
+	fi
+done
+
+
+### functions ###
+
+function exists()
+{
+	type $1 >/dev/null 2>&1
+}
+function wg_erreichbar()
+{
+	ping -c 1 takeouts.eu >/dev/null 2>&1
+}
+function is_workingcopy()
+{
+	svn=$(\which svn)
+	$svn info $1 >/dev/null 2>&1
+}
+
+function config-test()
+{
+	[ -e $HOME/config ] && exists svn && is_workingcopy $HOME/config && wg_erreichbar
+}
+
+
+function config-up()
+{
+    config-test && {
+        svn=$(\which svn)
+        rev_pre=$($svn info $HOME/config | grep Revision: | sed 's/Revision: //')
+        $svn up $HOME/config/
+        rev_post=$($svn info $HOME/config | grep Revision: | sed 's/Revision: //')
+        [ $rev_pre -lt $rev_post ] && config_was_updated=true && echo "$rev_pre -> $rev_post"
+	}
+}
+
+function config-ci()
+{
+    config-test && {
+        svn=$(\which svn)
+        $svn ci $HOME/config/
+    }
+}
+
+#config_was_updated=false
+#
+#if [ -z $first_go ] && config-test ; then
+	#config-up
+	#if [ $config_was_updated == true ]
+	#then
+		#first_go="false"
+		#eval source $HOME/.bash_profile
+		#return
+	#fi
+#fi
+#first_go=""

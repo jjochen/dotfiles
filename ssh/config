@@ -1,0 +1,119 @@
+# ssh configuration file ~/.ssh/config
+
+Host vwg
+    HostName 88.198.40.142
+    User jjochen
+    ForwardAgent yes
+
+Host takeouts.eu
+    HostName takeouts.eu
+    User jjochen
+    ForwardAgent yes
+
+Host vsrv
+    HostName 78.47.152.33
+    User jjochen
+    ForwardAgent yes
+
+
+Host jj
+    HostName jochen-pfeiffer.com
+    User u36541666
+    ForwardAgent yes
+
+Host jochen-pfeiffer.com
+    HostName jochen-pfeiffer.com
+    User u36541666
+    ForwardAgent yes
+
+Host mathe
+    HostName ssh.mathematik.hu-berlin.de
+    User pfeiffer
+    ForwardAgent yes
+
+Host mac
+    HostName jj-mac.local
+    User jochen
+    ForwardAgent yes
+
+Host gts
+    HostName gettheshoe.com
+    User u36541666
+
+Host sf
+    HostName shell.sourceforge.net
+    User jjochen
+
+Host flos
+    HostName 141.89.100.61
+    User jj
+    ForwardAgent yes
+
+Host geraet2
+    HostName 10.1.200.17
+    User autobuild
+    ForwardAgent no
+
+Host geraet3
+    HostName 10.1.200.16
+    User autobuild
+    ForwardAgent no
+
+Host nick
+    HostName 192.168.11.103
+    User admin
+    ForwardAgent no
+
+Host marco
+    HostName 192.168.11.104
+    User admin
+    ForwardAgent no
+
+Host geraet3extern
+    HostName 217.92.147.253
+    Port 2222
+    User autobuild
+    ForwardAgent no
+
+Host geraet2extern
+    HostName 217.92.147.253
+    Port 2223
+    User autobuild
+    ForwardAgent no
+
+Host admin
+    HostName 136.243.152.131
+    User runner
+    ForwardAgent no
+
+Host admin-stg
+    HostName 138.201.70.194
+    User runner
+    ForwardAgent no
+
+Host levi
+    HostName levi.event.gd
+    User jpfeiffer
+    ForwardAgent no
+
+Host *
+#   ForwardAgent yes 
+#   ForwardX11 no
+#   ForwardX11Trusted yes
+#   RhostsRSAAuthentication no
+#   RSAAuthentication yes
+#   PasswordAuthentication yes
+#   HostbasedAuthentication no
+#   BatchMode no
+#   CheckHostIP yes
+#   AddressFamily any
+    ConnectTimeout 0
+#   StrictHostKeyChecking ask
+#   IdentityFile ~/.ssh/identity
+    IdentityFile ~/.ssh/id_rsa
+#   IdentityFile ~/.ssh/id_dsa
+    Port 22
+#   Protocol 2,1
+#   Cipher 3des
+#   Ciphers aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc
+#   EscapeChar ~

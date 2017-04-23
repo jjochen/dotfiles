@@ -1,0 +1,1 @@
+/Users/jochen/.dotfiles/vim/colors/jjcolors.vim

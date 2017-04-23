@@ -1,0 +1,35 @@
+
+#startup_message off
+#nethack on
+
+# turn visual bell off
+vbell off
+
+#vbell_msg "   Wuff  ----  Wuff!!  "
+
+# define a bigger scrollback, default is 100 lines
+defscrollback 1024
+
+
+# An example of a "screen scraper" which will launch urlview on the current
+# screen window
+#
+#bind ^B eval "hardcopy_append off" "hardcopy -h $HOME/.screen-urlview" "screen urlview $HOME/.screen-urlview"
+
+# ------------------------------------------------------------------------------
+# STARTUP SCREENS
+# ------------------------------------------------------------------------------
+
+# Example of automatically running some programs in windows on screen startup.
+#
+#   The following will open top in the first window, an ssh session to monkey
+#   in the next window, and then open mutt and tail in windows 8 and 9
+#   respectively.
+#
+# screen vwg
+# screen sftp gts
+# screen mc
+# screen lynx
+# screen -t mail 8 mutt
+# screen -t daemon 9 tail -f /var/log/daemon.log
+
