@@ -1,1 +1,0 @@
-/Users/jochen/.dotfiles/vim/plugin/NERD_tree.vim

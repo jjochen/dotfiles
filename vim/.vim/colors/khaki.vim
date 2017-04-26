@@ -1,1 +1,0 @@
-/Users/jochen/.dotfiles/vim/colors/khaki.vim

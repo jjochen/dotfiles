@@ -1,1 +1,0 @@
-/Users/jochen/.dotfiles/vim/ftplugin/bib_latexSuite.vim

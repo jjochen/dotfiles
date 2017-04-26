@@ -1,1 +1,0 @@
-/Users/jochen/.dotfiles/vim/nerdtree_plugin/fs_menu.vim
