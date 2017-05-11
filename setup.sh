@@ -8,27 +8,14 @@ fancy_echo() {
 set -e
 
 
-# install xcode command line tools
-if ! command -v xcodebuild >/dev/null; then
-	fancy_echo "Installing Xcode command line tools ..."
-	xcode-select --install
-	fancy_echo "Exiting for now ..."
-	exit
+
+# install homebrew
+if ! command -v brew >/dev/null; then
+	fancy_echo "Installing Homebrew ..."
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-	fancy_echo "Xcode command line tools already installed."
+	fancy_echo "Homebrew already installed."
 fi
-
-
-# change shell to zsh
-case "$SHELL" in
-	*/zsh) :
-	fancy_echo "zsh is already current shell."
-	;;
-*)
-	fancy_echo "Changing to zsh ..."
-	chsh -s "$(which zsh)"
-	;;
-esac
 
 
 # checkout dotfiles
@@ -38,15 +25,6 @@ if [ ! -d $dotfiles_directory ]; then
 	git clone git@github.com:jjochen/dotfiles.git "$dotfiles_directory"
 else 
 	fancy_echo "Dotfiles directory already exists."
-fi
-
-
-# install homebrew
-if ! command -v brew >/dev/null; then
-	fancy_echo "Installing Homebrew ..."
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-else
-	fancy_echo "Homebrew already installed."
 fi
 
 
@@ -62,6 +40,28 @@ fi
 # link dotfiles
 fancy_echo "Linking dotfiles ..."
 rcup -v
+
+
+# change shell to zsh
+case "$SHELL" in
+	*/zsh) :
+	fancy_echo "zsh is already current shell."
+	;;
+*)
+	fancy_echo "Changing to zsh ..."
+	chsh -s "$(which zsh)"
+	;;
+esac
+
+
+# install oh-my-zsh
+oh_my_zsh_dir="$HOME/.oh-my-zsh"
+if [ ! -d $oh_my_zsh_dir ]; then
+	fancy_echo "Installing oh-my-zsh ..."
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+else
+	fancy_echo "oh-my-zsh already installed."
+fi
 
 
 # install ruby
@@ -86,40 +86,7 @@ number_of_cores=$(sysctl -n hw.ncpu)
 bundle config --global jobs $((number_of_cores - 1))
 
 
-# install oh-my-zsh
-oh_my_zsh_dir="$HOME/.oh-my-zsh"
-if [ ! -d $oh_my_zsh_dir ]; then
-	fancy_echo "Installing oh-my-zsh ..."
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-else
-	fancy_echo "oh-my-zsh already installed."
-fi
-
-
 # install janus
 fancy_echo "Installing janus ..."
 curl -L https://bit.ly/janus-bootstrap | bash
 
-
-exit 
-
-
-if [ -z "$(latest_installed_ruby)" ]; then
-	fancy_echo 'Installing latest ruby ...'
-	ruby-install ruby
-else
-	fancy_echo 'Checking if a newer version of Ruby is available ...'
-
-	. /usr/local/share/chruby/chruby.sh
-	chruby "ruby-$(latest_installed_ruby)"
-
-	ruby-install --latest > /dev/null
-	latest_stable_ruby="$(cat < "$HOME/.cache/ruby-install/ruby/stable.txt" | tail -n1)"
-
-	if ! [ "$latest_stable_ruby" = "$(latest_installed_ruby)" ]; then
-		fancy_echo "Installing latest stable Ruby version: $latest_stable_ruby"
-		ruby-install ruby
-	else
-		fancy_echo 'You have the latest version of Ruby'
-	fi
-fi

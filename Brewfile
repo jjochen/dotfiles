@@ -2,18 +2,19 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'thoughtbot/formulae'
 
-
 brew 'bash'
 brew 'bash-completion'
 brew 'chruby'
 brew 'clang-format'
 brew 'coreutils'
 brew 'fasd'
+brew 'findutils'
 brew 'git'
 brew 'git-lfs'
 brew 'gnupg2'
 brew 'gpg-agent'
 brew 'mas'
+brew 'moreutils'
 brew 'openssl'
 brew 'rcm'
 brew 'ruby-install'
@@ -38,6 +39,7 @@ cask 'burn'
 cask 'caffeine'
 cask 'colorpicker-hex'
 cask 'dropbox'
+cask 'flycut'
 cask 'github-desktop'
 cask 'google-chrome'
 cask 'google-drive'
@@ -46,7 +48,6 @@ cask 'hipchat'
 cask 'iterm2'
 cask 'kaleidoscope'
 cask 'macvim'
-#cask 'paintcode'
 cask 'provisioning'
 cask 'provisionql'
 cask 'qlcolorcode'
@@ -55,6 +56,7 @@ cask 'qlstephen'
 cask 'qlswift'
 cask 'quicklook-csv'
 cask 'quicklook-json'
+cask 'realm-browser'
 cask 'reflector'
 cask 'renamer'
 cask 'sequel-pro'
@@ -67,28 +69,21 @@ cask 'sourcetree'
 cask 'spotify'
 cask 'teamviewer'
 cask 'textmate'
+cask 'the-unarchiver'
 cask 'transmit'
 cask 'vlc'
 cask 'whatsapp'
-#cask 'daisydisk'
 #cask 'firefox'
-#cask 'flycut'
-#cask 'realm-browser'
-#cask 'the-unarchiver'
+#cask 'mactex'
+#cask 'paintcode'
 
 
 mas 'DaisyDisk', id: 411643860
 mas 'DMG Architect', id: 426104753
-mas 'Flycut', id: 442160987
 mas 'Gemini', id: 463541543
 mas 'Magnet', id: 441258766
 mas 'Outbank', id: 1094255754
 mas 'Patterns', id: 429449079
-mas 'Realm Browser', id: 1007457278
 mas 'Svgsus', id: 1106867065
-mas 'The Unarchiver', id: 425424353
 mas 'WeatherPro', id: 966486618
 mas 'Xcode', id: 497799835
-
-
-
