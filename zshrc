@@ -76,8 +76,9 @@ function clang-format-ios {
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+eval "$(fasd --init auto)"
+
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-
-eval "$(fasd --init auto)"
+source ~/.aliases
 
