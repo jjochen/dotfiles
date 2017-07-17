@@ -82,3 +82,5 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 source ~/.aliases
 
+zstyle :omz:plugins:ssh-agent identities id_rsa github_rsa
+
