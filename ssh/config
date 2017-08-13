@@ -49,16 +49,6 @@ Host flos
     User jj
     ForwardAgent yes
 
-Host geraet2
-    HostName 10.1.200.17
-    User autobuild
-    ForwardAgent no
-
-Host geraet3
-    HostName 10.1.200.16
-    User autobuild
-    ForwardAgent no
-
 Host nick
     HostName 192.168.13.103
     User admin
@@ -69,16 +59,16 @@ Host marco
     User admin
     ForwardAgent no
 
-Host geraet3extern
-    HostName 217.92.147.253
-    Port 2222
-    User autobuild
+Host nick-extern
+    HostName buildserver.esanum.de
+		Port 2222
+    User admin
     ForwardAgent no
 
-Host geraet2extern
-    HostName 217.92.147.253
-    Port 2223
-    User autobuild
+Host marco-extern
+		Port 4422
+    HostName buildserver.esanum.de
+    User admin
     ForwardAgent no
 
 Host admin
