@@ -30,7 +30,7 @@ fi
 
 # bundle Brewfile
 fancy_echo "Installing formulas and casks from the Brewfile ..."
-if brew bundle --file="$dotfiles_directory/Brewfile"; then
+if brew bundle --verbose --file="$dotfiles_directory/Brewfile"; then
 	fancy_echo "All formulas and casks were installed successfully."
 else
 	fancy_echo "Some formulas or casks failed to install."
