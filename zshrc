@@ -6,8 +6,6 @@ ZSH_THEME="steeef"
 
 export UPDATE_ZSH_DAYS=7
 
-COMPLETION_WAITING_DOTS="true"
-
 plugins=(git bundler osx colorize git-flow git-remote-branch github gpg-agent ssh-agent textmate svn virtualenv extract)
 
 source $ZSH/oh-my-zsh.sh
