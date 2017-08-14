@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'thoughtbot/formulae'
 
+
 brew 'bash'
 brew 'bash-completion'
 brew 'chruby'
@@ -41,15 +42,17 @@ cask 'colorpicker-hex'
 cask 'dropbox'
 cask 'flycut'
 cask 'github-desktop'
+cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'google-drive'
 cask 'handbrake'
 cask 'hipchat'
 cask 'iterm2'
 cask 'kaleidoscope'
+cask 'mactex'
 cask 'macvim'
-cask 'provisioning'
 cask 'nucleo'
+cask 'paintcode'
+cask 'provisioning'
 cask 'provisionql'
 cask 'qlcolorcode'
 cask 'qlmarkdown'
@@ -74,9 +77,6 @@ cask 'the-unarchiver'
 cask 'transmit'
 cask 'vlc'
 cask 'whatsapp'
-#cask 'firefox'
-#cask 'mactex'
-#cask 'paintcode'
 
 
 mas 'DaisyDisk', id: 411643860
@@ -88,3 +88,4 @@ mas 'Patterns', id: 429449079
 mas 'Svgsus', id: 1106867065
 mas 'WeatherPro', id: 966486618
 mas 'Xcode', id: 497799835
+
