@@ -3,6 +3,19 @@ tap 'caskroom/cask'
 tap 'thoughtbot/formulae'
 
 
+brew 'mas'
+
+mas 'DaisyDisk', id: 411643860
+mas 'DMG Architect', id: 426104753
+mas 'Gemini', id: 463541543
+mas 'Magnet', id: 441258766
+mas 'Outbank', id: 1094255754
+mas 'Patterns', id: 429449079
+mas 'Svgsus', id: 1106867065
+mas 'WeatherPro', id: 966486618
+mas 'Xcode', id: 497799835
+
+
 brew 'bash'
 brew 'bash-completion'
 brew 'chruby'
@@ -14,7 +27,6 @@ brew 'git'
 brew 'git-lfs'
 brew 'gnupg2'
 brew 'gpg-agent'
-brew 'mas'
 brew 'moreutils'
 brew 'openssl'
 brew 'rcm'
@@ -78,14 +90,4 @@ cask 'transmit'
 cask 'vlc'
 cask 'whatsapp'
 
-
-mas 'DaisyDisk', id: 411643860
-mas 'DMG Architect', id: 426104753
-mas 'Gemini', id: 463541543
-mas 'Magnet', id: 441258766
-mas 'Outbank', id: 1094255754
-mas 'Patterns', id: 429449079
-mas 'Svgsus', id: 1106867065
-mas 'WeatherPro', id: 966486618
-mas 'Xcode', id: 497799835
 
