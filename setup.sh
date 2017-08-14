@@ -90,3 +90,6 @@ bundle config --global jobs $((number_of_cores - 1))
 fancy_echo "Installing janus ..."
 curl -L https://bit.ly/janus-bootstrap | bash
 
+# setup xcode
+mkdir -p ~/Library/Developer/Xcode/UserData
+cp xcode/* ~/Library/Developer/Xcode/UserData/.
