@@ -8,7 +8,6 @@ fancy_echo() {
 set -e
 
 
-
 # install homebrew
 if ! command -v brew >/dev/null; then
 	fancy_echo "Installing Homebrew ..."

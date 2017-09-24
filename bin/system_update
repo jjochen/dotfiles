@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+cd $HOME
+
+# App Store
+sudo softwareupdate --install --all --verbose
+
+# Homebrew
+brew doctor
+brew update
+brew upgrade
+brew bundle
+brew cleanup
+
+# Update Janus
+curl -L https://bit.ly/janus-bootstrap | bash
+
+
+# Oh My ZSH
+# todo

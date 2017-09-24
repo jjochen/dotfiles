@@ -6,7 +6,7 @@ ZSH_THEME="steeef"
 
 export UPDATE_ZSH_DAYS=7
 
-plugins=(git bundler osx colorize git-flow git-remote-branch github gpg-agent ssh-agent textmate svn virtualenv extract)
+plugins=(git bundler pod osx colorize git-flow git-remote-branch github gpg-agent ssh-agent textmate svn virtualenv extract)
 
 source $ZSH/oh-my-zsh.sh
 
