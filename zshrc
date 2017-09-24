@@ -76,9 +76,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 eval "$(fasd --init auto)"
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-source ~/.aliases
+test -e /usr/local/share/chruby/chruby.sh && source /usr/local/share/chruby/chruby.sh
+test -e /usr/local/share/chruby/auto.sh && source /usr/local/share/chruby/auto.sh
+test -e ~/.aliases && source ~/.aliases
 
 zstyle :omz:plugins:ssh-agent identities id_rsa github_rsa
 
