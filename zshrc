@@ -79,6 +79,7 @@ eval "$(fasd --init auto)"
 test -e /usr/local/share/chruby/chruby.sh && source /usr/local/share/chruby/chruby.sh
 test -e /usr/local/share/chruby/auto.sh && source /usr/local/share/chruby/auto.sh
 test -e ~/.aliases && source ~/.aliases
+test -e ~/.fastlane/completions/completion.sh && source ~/.fastlane/completions/completion.sh
 
 zstyle :omz:plugins:ssh-agent identities id_rsa github_rsa
 
