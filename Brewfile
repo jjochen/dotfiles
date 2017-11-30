@@ -11,6 +11,7 @@ mas 'Gemini', id: 463541543
 mas 'Magnet', id: 441258766
 mas 'Outbank', id: 1094255754
 mas 'Patterns', id: 429449079
+mas 'Spark - Love your email again', id: 1176895641
 mas 'Svgsus', id: 1106867065
 mas 'WeatherPro', id: 966486618
 mas 'Xcode', id: 497799835
@@ -23,6 +24,7 @@ brew 'clang-format'
 brew 'coreutils'
 brew 'fasd'
 brew 'findutils'
+brew 'ffmpeg'
 brew 'git'
 brew 'git-lfs'
 brew 'gnupg2'
@@ -35,6 +37,7 @@ brew 'ssh-copy-id'
 brew 'subversion'
 brew 'swi-prolog'
 brew 'swiftformat'
+brew 'switchaudio-osx'
 brew 'vim', args: ['--override-system-vi']
 brew 'wget'
 brew 'xcproj'
@@ -50,6 +53,7 @@ cask 'base'
 cask 'betterzipql'
 cask 'burn'
 cask 'caffeine'
+cask 'drop-to-gif'
 cask 'dropbox'
 cask 'flycut'
 cask 'github-desktop'
@@ -82,11 +86,11 @@ cask 'skype'
 cask 'slack'
 cask 'sourcetree'
 cask 'spotify'
+cask 'stride'
 cask 'teamviewer'
 cask 'textmate'
 cask 'the-unarchiver'
 cask 'transmit'
 cask 'vlc'
 cask 'whatsapp'
-
 

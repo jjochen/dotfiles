@@ -19,6 +19,7 @@ brew update
 brew upgrade
 brew bundle
 brew cleanup
+mas upgrade
 
 # Update Janus
 curl -L https://bit.ly/janus-bootstrap | bash

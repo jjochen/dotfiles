@@ -1,4 +1,5 @@
 alias bf="bundle exec fastlane"
 alias bpi="bundle install && bundle exec pod install"
 alias bpu="gem install bundler && bundle update && bundle exec pod update"
+alias default_audio_input="SwitchAudioSource -t input -s \"Built-in Microphone\""
 

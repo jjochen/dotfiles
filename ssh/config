@@ -49,26 +49,26 @@ Host flos
     User jj
     ForwardAgent yes
 
-Host nick
+Host buildserver1
     HostName 192.168.13.103
-    User admin
+    User autobuild
     ForwardAgent no
 
-Host marco
+Host buildserver2
     HostName 192.168.13.104
-    User admin
+    User autobuild
     ForwardAgent no
 
-Host nick-extern
+Host buildserver1-extern
     HostName buildserver.esanum.de
 		Port 2222
-    User admin
+    User autobuild
     ForwardAgent no
 
-Host marco-extern
+Host buildserver2-extern
 		Port 4422
     HostName buildserver.esanum.de
-    User admin
+    User autobuild
     ForwardAgent no
 
 Host admin
