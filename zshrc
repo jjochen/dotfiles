@@ -6,7 +6,7 @@ ZSH_THEME="steeef"
 
 export UPDATE_ZSH_DAYS=7
 
-plugins=(git bundler pod osx colorize git-flow git-remote-branch github gpg-agent ssh-agent textmate svn virtualenv extract)
+plugins=(git bundler pod osx colorize git-flow git-remote-branch github gpg-agent ssh-agent textmate svn virtualenv extract rake)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,9 +83,10 @@ eval "$(fasd --init auto)"
 test -e /usr/local/share/chruby/chruby.sh && source /usr/local/share/chruby/chruby.sh
 test -e /usr/local/share/chruby/auto.sh && source /usr/local/share/chruby/auto.sh
 test -e ~/.aliases && source ~/.aliases
+test -e "${HOME}/.zshrc.local" && source "${HOME}/.zshrc.local"
 test -e ~/.fastlane/completions/completion.sh && source ~/.fastlane/completions/completion.sh
 
 zstyle :omz:plugins:ssh-agent identities id_rsa github_rsa
 
-export CHANGELOG_GITHUB_TOKEN="a282981c2a79c275e29b5c9bb5a929c8e5182c96"
+unalias gm
 

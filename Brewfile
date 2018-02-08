@@ -17,6 +17,7 @@ mas 'WeatherPro', id: 966486618
 mas 'Xcode', id: 497799835
 
 
+brew 'ansible@1.9'
 brew 'bash'
 brew 'bash-completion'
 brew 'chruby'
@@ -29,6 +30,7 @@ brew 'git'
 brew 'git-lfs'
 brew 'gnupg2'
 brew 'gpg-agent'
+brew 'graphicsmagick'
 brew 'moreutils'
 brew 'openssl'
 brew 'rcm'
@@ -37,6 +39,7 @@ brew 'ssh-copy-id'
 brew 'subversion'
 brew 'swi-prolog'
 brew 'swiftformat'
+brew 'swiftlint'
 brew 'switchaudio-osx'
 brew 'vim', args: ['--override-system-vi']
 brew 'wget'
@@ -93,4 +96,5 @@ cask 'the-unarchiver'
 cask 'transmit'
 cask 'vlc'
 cask 'whatsapp'
+cask 'stamp'
 
