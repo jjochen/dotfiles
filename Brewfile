@@ -12,7 +12,6 @@ mas 'Gemini', id: 463541543
 mas 'Magnet', id: 441258766
 mas 'Outbank', id: 1094255754
 mas 'Patterns', id: 429449079
-mas 'Spark - Love your email again', id: 1176895641
 mas 'Svgsus', id: 1106867065
 mas 'WeatherPro', id: 966486618
 mas 'Xcode', id: 497799835
@@ -93,7 +92,6 @@ cask 'skim'
 cask 'skype'
 cask 'slack'
 cask 'sourcetree'
-cask 'spark'
 cask 'spotify'
 cask 'stamp'
 cask 'stride'
