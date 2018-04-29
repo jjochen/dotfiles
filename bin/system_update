@@ -14,12 +14,12 @@ cd $HOME
 sudo softwareupdate --install --restart --all --verbose
 
 # Homebrew
-brew doctor
-brew update
-brew upgrade
-brew bundle --global
-brew cleanup
-mas upgrade
+brew doctor --verbose
+brew update --verbose
+brew upgrade --verbose
+brew bundle --global --verbose
+brew cleanup --verbose
+mas upgrade --verbose
 
 # Update Janus
 curl -L https://bit.ly/janus-bootstrap | bash
