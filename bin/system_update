@@ -19,7 +19,7 @@ brew update --verbose
 brew upgrade --verbose
 brew bundle --global --verbose
 brew cleanup --verbose
-mas upgrade --verbose
+mas upgrade
 
 # Update Janus
 curl -L https://bit.ly/janus-bootstrap | bash
