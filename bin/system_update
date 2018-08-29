@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+#set -e
 
 # Ask for password up-front
 sudo -v
@@ -18,7 +18,7 @@ brew doctor --verbose
 brew update --verbose
 brew upgrade --verbose
 brew bundle --global --verbose
-brew cleanup --verbose
+brew cleanup
 mas upgrade
 
 # Update Janus
