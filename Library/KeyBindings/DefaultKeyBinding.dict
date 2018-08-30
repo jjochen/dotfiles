@@ -13,17 +13,10 @@
         " " = {
             " " = ("insertText:", "\U00A0"); /* Non-breaking space */
         };
-        "+" = {
-            "+" = ("insertText:", "👍");
-            "1" = ("insertText:", "👍");
-        };
         "-" = {
-            "-" = ("insertText:", "👎");
-            "1" = ("insertText:", "👎");
             ">" = ("insertText:", "→");
         };
         "!" = {
-            "!" = ("insertText:", "⚠️");
             "?" = ("insertText:", "‽");
         };
         "?" = {
@@ -64,12 +57,6 @@
         "7" = {
             "8" = ("insertText:", "⅞");
         };
-        ":" = {
-            "(" = ("insertText:", "☹️");
-            ")" = ("insertText:", "😊");
-        };
-        "(" = ("insertText:", "🙁");
-        ")" = ("insertText:", "😊");
         "§" = ("insertText:", "😊");
         "<" = {
             "\"" = ("insertText:", "“");
@@ -173,11 +160,6 @@
               "t" = ("insertText:", "⇥"); /* Tab */
             };
           };
-          "i" = {
-            "s" = {
-              "s" = ("insertText:", "😘");
-            };
-          };
         };
         "l" = {
             "i" = {
@@ -195,19 +177,7 @@
                 };
             };
         };
-        "o" = {
-            "h" = {
-                "h" = ("insertText:", "😳");
-            };
-        };
         "p" = {
-            "a" = {
-                "r" = {
-                    "t" = {
-                        "y" = ("insertText:", "🎉");
-                    };
-                };
-            };
             "e" = {
                 "a" = {
                     "c" = {
@@ -227,9 +197,6 @@
             };
         };
         "s" = {
-            "a" = {
-                "d" = ("insertText:", "🙁");
-            };
             "h" = {
                 "r" = {
                     "u" = {
@@ -242,29 +209,6 @@
                     "g" = ("insertText:", "🎶");
                 };
             };
-            "m" = {
-                "i" = {
-                    "l" = {
-                        "e" = ("insertText:", "😊");
-                    };
-                };
-            };
-            "p" = {
-                "o" = {
-                    "c" = {
-                        "k" = ("insertText:", "🖖");
-                    };
-                };
-            };
-        };
-        "t" = {
-            "e" = {
-                "e" = {
-                    "t" = {
-                        "h" = ("insertText:", "😬");
-                };
-            }; 
-            };
         };
         "u" = {
             "n" = {
@@ -274,16 +218,6 @@
                             "p" = ("insertText:", "┬─┬ノ(ಠ_ಠノ)");
                         };
                     };
-                };
-            };
-            "p" = {
-                "s" = ("insertText:", "😬");
-            };
-        };
-        "w" = {
-            "a" = {
-                "v" = {
-                    "e" = ("insertText:", "👋");
                 };
             };
         };
@@ -305,12 +239,13 @@
         "3" = ("insertText:", "✨");
         "a" = ("insertText:", "⚠️");
         "b" = ("insertText:", "💥");
-        "B" = ("insertText:", "🦗");
+        "B" = ("insertText:", "🌯");
         "c" = ("insertText:", "🤪");
         "d" = ("insertText:", "👎");
         "e" = ("insertText:", "😳");
         "f" = ("insertText:", "🌻");
         "g" = ("insertText:", "😬");
+        "G" = ("insertText:", "🦗");
         "h" = ("insertText:", "😜");
         "i" = ("insertText:", "🤔");
         "j" = ("insertText:", "😂");
@@ -329,6 +264,7 @@
         "U" = ("insertText:", "🙃");
         "v" = ("insertText:", "🖖");
         "w" = ("insertText:", "👋");
+        "W" = ("insertText:", "👊");
         "x" = ("insertText:", "🍑");
         "X" = ("insertText:", "❌");
         "y" = ("insertText:", "🙄");
