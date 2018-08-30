@@ -1,3 +1,4 @@
 EXCLUDES="resources README.md LICENSE setup.sh"
 DOTFILES_DIRS="$HOME/.dotfiles"
-UNDOTTED="bin Brewfile"
+SYMLINK_DIRS="texmf"
+UNDOTTED="bin Brewfile texmf Library"
