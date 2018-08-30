@@ -1,4 +1,10 @@
 {
+    "^U" = (uppercaseWord:, moveWordForward:, moveWordBackward:);
+    "^L" = (lowercaseWord:, moveWordForward:, moveWordBackward:);
+    "^C" = (capitalizeWord:, moveWordForward:, moveWordBackward:);
+    "~o" = (moveToEndOfParagraph:, insertNewline:);
+    "~O" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:);
+    
     "§" = {
         "$\UF700" = ("insertText:", "↑"); /* (Shift) Up arrow */
         "$\UF701" = ("insertText:", "↓"); /* (Shift) Down arrow */
@@ -204,6 +210,7 @@
             };
         };
     };
+    
     "~M" = {
         "!" = ("insertText:", "⚠️");
         ";" = ("insertText:", "🕳");
