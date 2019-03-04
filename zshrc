@@ -9,6 +9,7 @@ export UPDATE_ZSH_DAYS=7
 plugins=(git bundler pod osx colorize git-flow git-remote-branch github gpg-agent ssh-agent textmate svn virtualenv extract rake)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Customize to your needs...
 
