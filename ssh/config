@@ -49,42 +49,99 @@ Host flos
     User jj
     ForwardAgent yes
 
-Host buildserver1
-    HostName 192.168.13.103
-    User autobuild
-    ForwardAgent no
 
-Host buildserver2
-    HostName 192.168.13.104
-    User autobuild
-    ForwardAgent no
-
-Host buildserver1-extern
-    HostName buildserver.esanum.de
-		Port 2222
-    User autobuild
-    ForwardAgent no
-
-Host buildserver2-extern
-		Port 4422
-    HostName buildserver.esanum.de
-    User autobuild
-    ForwardAgent no
-
-Host admin
-    HostName 136.243.152.131
-    User runner
-    ForwardAgent no
-
-Host admin-stg
-    HostName 138.201.70.194
-    User runner
-    ForwardAgent no
+# Host buildserver1-extern
+#     HostName buildserver.esanum.de
+#     Port 2222
+#     User autobuild
+#     ForwardAgent no
+#
+# Host buildserver2-extern
+#     Port 4422
+#     HostName buildserver.esanum.de
+#     User autobuild
+#     ForwardAgent no
+#
+# Host admin
+#     HostName 136.243.152.131
+#     User runner
+#     ForwardAgent no
+#
+# Host admin-stg
+#     HostName 138.201.70.194
+#     User runner
+#     ForwardAgent no
 
 Host levi
     HostName levi.event.gd
     User jpfeiffer
     ForwardAgent no
+
+##### esanum #####
+
+Host databases
+    Hostname 138.201.36.221
+    # 138.201.36.221 databases.esanum.de databases
+
+Host frontend
+    Hostname 138.201.50.152
+    User runner
+    # 138.201.50.152 meg-frontend.esanum.de frontend
+
+Host backend
+    Hostname 136.243.152.131
+    User runner
+    # 136.243.152.131 meg-backend.esanum.de backend
+
+Host vmhost
+    Hostname 138.201.55.240
+    # 138.201.55.240 vms.esanum.de vms
+
+Host backups
+    Hostname 178.63.93.136
+    # 178.63.93.136 backups.esanum.de backups
+
+Host haproxy
+    Hostname 138.201.56.130
+    # 138.201.56.130 haproxy.esanum.de haproxy
+
+# VMS
+
+Host as8
+    Hostname 138.201.70.194
+    User runner
+    # Staging Server for Admin, CMS, FIS
+
+Host wordpress
+    Hostname 138.201.70.197
+    User runner
+    # 138.201.70.197 wordpress wordpress.event.gd
+
+Host redis
+    Hostname 138.201.70.202
+
+Host xmpp
+    Hostname 138.201.70.200
+
+# iOS Buildservers
+
+Host buildserver1
+    Hostname buildserver.esanum.de
+    User autobuild
+    Port 2222
+
+Host buildserver2
+    Hostname buildserver.esanum.de
+    User autobuild
+    Port 4422
+    
+Host buildserver1_local
+    HostName 192.168.13.103
+    User autobuild
+
+Host buildserver2_local
+    HostName 192.168.13.104
+    User autobuild
 
 Host *
     UseKeychain yes
