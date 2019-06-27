@@ -52,9 +52,10 @@ AddPathTo ()
   export PATH
 }
 
-#AddPathTo "$HOME/.rvm/bin"
+#AddPathTo "$HOME/.rvm/bin""
 AddPathTo "/opt/local/sbin"
 AddPathTo "/opt/local/bin"
+AddPathTo "/usr/local/sbin"
 AddPathTo "/usr/local/bin"
 AddPathTo "/usr/texbin"
 AddPathTo "/Library/TeX/texbin"

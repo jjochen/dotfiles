@@ -217,6 +217,7 @@
         "/" = ("insertText:", "🚧");
         "," = ("insertText:", "😉");
         "." = ("insertText:", "⏳");
+        "-" = ("insertText:", "❌");
         "0" = ("insertText:", "✅");
         "1" = ("insertText:", "🦄");
         "2" = ("insertText:", "👀");
@@ -225,7 +226,9 @@
         "b" = ("insertText:", "💥");
         "B" = ("insertText:", "🌯");
         "c" = ("insertText:", "🤪");
+        "C" = ("insertText:", "☁️");
         "d" = ("insertText:", "👎");
+        "D" = ("insertText:", "🙁");
         "e" = ("insertText:", "😳");
         "f" = ("insertText:", "🌻");
         "g" = ("insertText:", "😬");
@@ -235,9 +238,9 @@
         "j" = ("insertText:", "😂");
         "k" = ("insertText:", "😘");
         "l" = ("insertText:", "😎");
-        "L" = ("insertText:", "☁️");
         "m" = ("insertText:", "😤");
         "n" = ("insertText:", "🤓");
+        "N" = ("insertText:", "🚫");
         "o" = ("insertText:", "🕺");
         "p" = ("insertText:", "🎉");
         "q" = ("insertText:", "🎈");

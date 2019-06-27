@@ -72,56 +72,62 @@ Host flos
 #     User runner
 #     ForwardAgent no
 
-Host levi
-    HostName levi.event.gd
-    User jpfeiffer
-    ForwardAgent no
 
 ##### esanum #####
 
 Host databases
     Hostname 138.201.36.221
+    User jpfeiffer
     # 138.201.36.221 databases.esanum.de databases
 
 Host frontend
     Hostname 138.201.50.152
-    User runner
+    User jpfeiffer
+    #User runner
     # 138.201.50.152 meg-frontend.esanum.de frontend
 
 Host backend
     Hostname 136.243.152.131
-    User runner
+    User jpfeiffer
+    #User runner
     # 136.243.152.131 meg-backend.esanum.de backend
 
 Host vmhost
     Hostname 138.201.55.240
+    User jpfeiffer
     # 138.201.55.240 vms.esanum.de vms
 
 Host backups
     Hostname 178.63.93.136
+    User jpfeiffer
     # 178.63.93.136 backups.esanum.de backups
 
 Host haproxy
     Hostname 138.201.56.130
+    User jpfeiffer
     # 138.201.56.130 haproxy.esanum.de haproxy
 
 # VMS
 
 Host as8
     Hostname 138.201.70.194
-    User runner
+    User jpfeiffer
+    #User runner
     # Staging Server for Admin, CMS, FIS
 
 Host wordpress
     Hostname 138.201.70.197
-    User runner
+    User jpfeiffer
+    #User runner
     # 138.201.70.197 wordpress wordpress.event.gd
 
 Host redis
     Hostname 138.201.70.202
+    User jpfeiffer
 
 Host xmpp
     Hostname 138.201.70.200
+    User jpfeiffer
 
 # iOS Buildservers
 

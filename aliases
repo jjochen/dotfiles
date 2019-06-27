@@ -1,6 +1,6 @@
 alias bf="bundle exec fastlane"
 alias bpi="bundle install && bundle exec pod install"
-alias bpu="gem install bundler -v '~> 1.0' && bundle update && bundle exec pod update"
+alias bpu="gem install bundler && bundle update && bundle exec pod update"
 alias default_audio_input="SwitchAudioSource -t input -s \"Built-in Microphone\""
 alias enable_aac="sudo defaults write bluetoothaudiod \"Enable AAC codec\" -bool true"
 alias vnc_buildserver1="open vnc://192.168.13.103"
