@@ -17,7 +17,8 @@ mas 'WeatherPro', id: 966486618
 mas 'Xcode', id: 497799835
 
 
-brew 'ansible@1.9'
+brew 'ansible'
+brew 'ansible-lint'
 brew 'astyle'
 brew 'bash'
 brew 'bash-completion'
@@ -56,6 +57,7 @@ brew 'vim', args: ['--override-system-vi']
 brew 'wget'
 brew 'xcproj'
 brew 'xctool'
+brew 'yamllint'
 brew 'zsh'
 brew 'zsh-autosuggestions'
 brew 'zsh-completions'
@@ -89,6 +91,7 @@ cask 'macvim'
 cask 'model01commander'
 cask 'nucleo'
 #cask 'paintcode'
+cask 'pock'
 cask 'postman'
 cask 'provisioning'
 cask 'provisionql'

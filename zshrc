@@ -16,6 +16,8 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export FASTLANE_USER=apple@jochen-pfeiffer.com
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 fpath=(/usr/local/share/zsh-completions $fpath)
