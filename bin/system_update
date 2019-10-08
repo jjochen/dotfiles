@@ -15,10 +15,10 @@ sudo softwareupdate --install --restart --all --verbose
 
 # Homebrew
 brew doctor --verbose
-brew update --verbose
-brew upgrade --verbose
-brew cask upgrade --verbose
-brew bundle --global --verbose
+brew update
+brew upgrade
+brew cask upgrade
+brew bundle --global
 brew cleanup
 mas upgrade
 
