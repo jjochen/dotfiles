@@ -14,7 +14,7 @@ mas 'Outbank', id: 1094255754
 mas 'Patterns', id: 429449079
 mas 'Svgsus', id: 1106867065
 mas 'WeatherPro', id: 966486618
-mas 'Xcode', id: 497799835
+#mas 'Xcode', id: 497799835
 
 
 brew 'ansible'
@@ -80,7 +80,7 @@ cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'handbrake'
 cask 'hazel'
-cask 'hipchat'
+#cask 'hipchat'
 cask 'istat-menus'
 cask 'iterm2'
 cask 'kaleidoscope'
@@ -121,6 +121,6 @@ cask 'the-unarchiver'
 cask 'transmit'
 cask 'vlc'
 cask 'whatsapp'
-cask 'zoomus'
+#cask 'zoomus'
 
 

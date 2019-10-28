@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/zsh
 
 #set -e
 
@@ -10,21 +10,22 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 cd $HOME
 
-# App Store
+echo '\n=== Update App Store ==='
 sudo softwareupdate --install --restart --all --verbose
 
-# Homebrew
+echo '=== Update Homebrew ==='
+sudo xcode-select --switch /Applications/Xcode.app
 brew doctor --verbose
 brew update
 brew upgrade
 brew cask upgrade
 brew bundle --global
 brew cleanup
-mas upgrade
+#mas upgrade
 
-# Update Janus
+echo '\n=== Update Janus ==='
 curl -L https://bit.ly/janus-bootstrap | bash
 
 
-# Oh My ZSH
-# todo
+echo '\n=== Update Oh-My-ZSH ==='
+env ZSH=$ZSH /bin/sh $ZSH/tools/upgrade.sh
