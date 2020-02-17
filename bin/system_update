@@ -26,6 +26,5 @@ brew cleanup
 echo '\n=== Update Janus ==='
 curl -L https://bit.ly/janus-bootstrap | bash
 
-
 echo '\n=== Update Oh-My-ZSH ==='
-env ZSH=$ZSH /bin/sh $ZSH/tools/upgrade.sh
+env ZSH=$HOME/.oh-my-zsh /bin/sh $ZSH/tools/upgrade.sh

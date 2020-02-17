@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 tap 'jjochen/cask'
 tap 'thoughtbot/formulae'
 tap 'vapor/homebrew-tap'
+tap 'github/gh'
 
 
 brew 'mas'
@@ -9,10 +10,13 @@ brew 'mas'
 mas 'DaisyDisk', id: 411643860
 mas 'DMG Architect', id: 426104753
 mas 'Gemini', id: 463541543
+mas 'Icon Set Creator', id: 939343785
 mas 'Magnet', id: 441258766
 mas 'Outbank', id: 1094255754
+mas 'Paste JSON as Code • quicktype', id: 1330801220
 mas 'Patterns', id: 429449079
 mas 'Svgsus', id: 1106867065
+mas 'Things', id: 904280696
 mas 'WeatherPro', id: 966486618
 #mas 'Xcode', id: 497799835
 
@@ -33,6 +37,7 @@ brew 'exa'
 brew 'fasd'
 brew 'findutils'
 brew 'ffmpeg'
+brew 'gh'
 brew 'git'
 brew 'git-lfs'
 brew 'git-standup'
@@ -64,7 +69,7 @@ brew 'zsh-completions'
 
 
 cask '1password'
-cask '1password-cli'
+#cask '1password-cli'
 cask 'airfoil'
 cask 'atom'
 cask 'arduino'
@@ -73,6 +78,7 @@ cask 'betterzipql'
 cask 'bunqcommunity-bunq'
 cask 'burn'
 cask 'caffeine'
+cask 'db-browser-for-sqlite'
 cask 'dropbox'
 cask 'flycut'
 cask 'github-desktop'
@@ -102,7 +108,7 @@ cask 'qlswift'
 cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'realm-browser'
-cask 'reflector'
+#cask 'reflector'
 cask 'renamer'
 cask 'sequel-pro'
 #cask 'sip'
@@ -112,12 +118,13 @@ cask 'skype'
 cask 'slack'
 cask 'sourcetree'
 cask 'spotify'
-cask 'stamp'
-cask 'steam'
-cask 'stride'
+#cask 'stamp'
+#cask 'steam'
+#cask 'stride'
 cask 'teamviewer'
 cask 'textmate'
 cask 'the-unarchiver'
+cask 'thingsmacsandboxhelper'
 cask 'transmit'
 cask 'vlc'
 cask 'whatsapp'
