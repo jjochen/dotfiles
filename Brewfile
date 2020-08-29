@@ -3,6 +3,7 @@ tap 'jjochen/cask'
 tap 'thoughtbot/formulae'
 tap 'vapor/homebrew-tap'
 tap 'github/gh'
+#tap 'homebrew/cask-drivers'
 
 
 brew 'mas'
@@ -15,6 +16,7 @@ mas 'Magnet', id: 441258766
 mas 'Outbank', id: 1094255754
 mas 'Paste JSON as Code • quicktype', id: 1330801220
 mas 'Patterns', id: 429449079
+mas 'Pastel', id: 413897608
 mas 'Svgsus', id: 1106867065
 mas 'Things', id: 904280696
 mas 'WeatherPro', id: 966486618
@@ -42,9 +44,11 @@ brew 'git'
 brew 'git-lfs'
 brew 'git-standup'
 brew 'gnupg2'
-brew 'gpg-agent'
+#brew 'gpg-agent'
 brew 'graphicsmagick'
 brew 'htop'
+brew 'imagemagick'
+brew 'librsvg'
 brew 'moreutils'
 brew 'npm'
 brew 'openssl'
@@ -80,6 +84,7 @@ cask 'bunqcommunity-bunq'
 cask 'burn'
 cask 'chrysalis'
 cask 'db-browser-for-sqlite'
+cask 'displaylink'
 cask 'dropbox'
 cask 'flycut'
 cask 'github-desktop'
@@ -88,7 +93,7 @@ cask 'google-chrome'
 cask 'handbrake'
 cask 'hazel'
 #cask 'hipchat'
-cask 'intelliscape-caffeine'
+#cask 'intelliscape-caffeine'
 cask 'istat-menus'
 cask 'iterm2'
 cask 'kaleidoscope'
