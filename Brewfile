@@ -1,6 +1,5 @@
 cask_args appdir: '/Applications'
 tap 'jjochen/cask'
-tap 'thoughtbot/formulae'
 tap 'vapor/homebrew-tap'
 tap 'github/gh'
 #tap 'homebrew/cask-drivers'
