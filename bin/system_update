@@ -18,7 +18,7 @@ sudo xcode-select --switch /Applications/Xcode.app
 brew doctor --verbose
 brew update
 brew upgrade
-brew cask upgrade
+brew upgrade --cask
 brew bundle --global
 brew cleanup
 #mas upgrade
