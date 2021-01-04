@@ -1,5 +1,5 @@
 EXCLUDES="resources README.md LICENSE setup.sh"
 DOTFILES_DIRS="$HOME/.dotfiles"
 SYMLINK_DIRS="texmf"
-UNDOTTED="bin Brewfile Gemfile.global texmf Library"
+UNDOTTED="bin Gemfile.global texmf Library"
 COPY_ALWAYS="Library/**/*"
