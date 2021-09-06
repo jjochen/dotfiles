@@ -1,0 +1,47 @@
+{
+    "workbench.colorTheme": "Xcode (Default Dark)",
+    "dart.flutterSdkPath": ".fvm/flutter_sdk",
+    "search.exclude": {
+      "**/.fvm": true
+    },
+    "files.watcherExclude": {
+      "**/.fvm": true
+    },
+    "dart.previewLsp": true,
+    "dart.lineLength": 120,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true,
+        },
+        "editor.rulers": [
+            80,
+            120,
+        ],
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "branch-create:command"
+    ],
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "dart.debugExternalLibraries": true,
+    "dart.debugSdkLibraries": false,
+    "redhat.telemetry.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "dart.analyzerLogFile": null,
+}
