@@ -6,7 +6,25 @@ ZSH_THEME="steeef"
 
 export UPDATE_ZSH_DAYS=7
 
-plugins=(git bundler pod osx colorize git-flow github gpg-agent ssh-agent textmate svn virtualenv extract rake)
+plugins=(
+  git
+  bundler
+  pod
+  brew
+  macos
+  colorize
+  git-flow
+  github
+  gpg-agent
+  ssh-agent
+  textmate
+  virtualenv
+  extract
+  rake
+  ansible
+  chruby
+  iterm2
+)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -17,6 +35,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 export FASTLANE_USER=apple@jochen-pfeiffer.com
+export KALEIDOSCOPE_DIR=${HOME}/coden/kaleidoscope/Kaleidoscope-Bundle-Keyboardio/avr/libraries/Kaleidoscope
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
