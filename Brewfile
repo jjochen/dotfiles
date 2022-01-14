@@ -68,7 +68,6 @@ brew 'vim', args: ['--override-system-vi']
 brew 'watchman'
 brew 'wget'
 brew 'xcproj'
-brew 'xctool'
 brew 'yamllint'
 brew 'zsh'
 brew 'zsh-autosuggestions'
@@ -140,7 +139,7 @@ cask 'whatsapp'
 cask 'xscope'
 cask 'zoom'
 
-mas 'Balance Lock', id: 1019371109
+#mas 'Balance Lock', id: 1019371109
 mas 'DaisyDisk', id: 411643860
 mas 'Developer', id: 640199958
 mas 'GarageBand', id: 682658836

@@ -140,7 +140,17 @@ Host buildserver2
     Hostname buildserver.esanum.de
     User autobuild
     Port 4422
-    
+
+Host buildserver3
+    Hostname buildserver.esanum.de
+    User autobuild
+    Port 4455
+
+Host buildserver4
+    Hostname buildserver.esanum.de
+    User autobuild
+    Port 4466
+
 Host buildserver1_local
     HostName 192.168.13.103
     User autobuild
