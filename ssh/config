@@ -131,33 +131,41 @@ Host xmpp
 
 # iOS Buildservers
 
-Host buildserver1
+Host buildserver_production
     Hostname buildserver.esanum.de
     User autobuild
     Port 2222
 
-Host buildserver2
+Host buildserver_staging
     Hostname buildserver.esanum.de
     User autobuild
     Port 4422
 
-Host buildserver3
+Host buildserver_m1_production
     Hostname buildserver.esanum.de
     User autobuild
     Port 4455
 
-Host buildserver4
+Host buildserver_m1_staging
     Hostname buildserver.esanum.de
     User autobuild
     Port 4466
 
-Host buildserver1_local
+Host buildserver_production_local
     HostName 192.168.13.103
     User autobuild
 
-Host buildserver2_local
+Host buildserver_staging_local
     HostName 192.168.13.104
     User autobuild
+
+Host buildserver_m1_production_local
+    hostname 10.10.240.40
+    user autobuild
+
+Host bbuildserver_m1_staging_local
+    hostname 10.10.240.41
+    user autobuild
 
 Host *
     UseKeychain yes
@@ -166,6 +174,7 @@ Host *
     IdentityFile ~/.ssh/id_rsa
     IdentityFile ~/.ssh/github_rsa
     Port 22
+    ServerAliveInterval 10
 #   ForwardAgent yes 
 #   ForwardX11 no
 #   ForwardX11Trusted yes

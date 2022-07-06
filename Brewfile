@@ -6,6 +6,7 @@ tap 'vapor/tap'
 tap 'dart-lang/dart'
 tap 'leoafarias/fvm'
 tap 'pirj/homebrew-noclamshell'
+tap 'felangel/mason'
 
 
 brew 'ansible'
@@ -23,6 +24,7 @@ brew 'cmatrix'
 brew 'cocoapods'
 brew 'coreutils'
 brew 'dart'
+# brew 'devutils'
 brew 'exa'
 brew 'fasd'
 brew 'ffmpeg'
@@ -41,6 +43,7 @@ brew 'java'
 brew 'lcov'
 brew 'librsvg'
 brew 'mas'
+brew 'mason'
 brew 'mint'
 brew 'moreutils'
 brew 'nnn'
@@ -56,7 +59,7 @@ brew 'ruby-install'
 brew 'shellcheck'
 brew 'sentry-cli' # getsentry/tools
 brew 'ssh-copy-id'
-brew 'subversion'
+# brew 'subversion'
 brew 'swi-prolog'
 brew 'swiftformat'
 brew 'swiftlint'
@@ -91,6 +94,8 @@ cask 'db-browser-for-sqlite'
 cask 'discord'
 cask 'displaylink'
 cask 'dropbox'
+cask 'fantastical'
+cask 'fig'
 cask 'figma'
 cask 'flycut'
 cask 'github-desktop'
@@ -143,13 +148,13 @@ cask 'zoom'
 mas 'DaisyDisk', id: 411643860
 mas 'Developer', id: 640199958
 mas 'GarageBand', id: 682658836
-mas 'Gemini', id: 463541543
+# mas 'Gemini', id: 463541543
 mas 'Icon Set Creator', id: 939343785
 mas 'iMovie', id: 408981434
 mas 'Keynote', id: 409183694
 mas 'Magnet', id: 441258766
 mas 'Numbers', id: 409203825
-mas 'Outbank', id: 1094255754
+# mas 'Outbank', id: 1094255754
 mas 'Pages', id: 409201541
 mas 'Paste JSON as Code • quicktype', id: 1330801220
 mas 'Pastel', id: 413897608
