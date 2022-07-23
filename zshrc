@@ -75,18 +75,28 @@ AddPathTo ()
   export PATH
 }
 
+# Handle Mac platforms
+CPU=$(uname -p)
+HOMEBREW_DIR
+if [[ "$CPU" == "arm" ]]; then
+  echo "ARM"
+  HOMEBREW_DIR="/opt/homebrew"
+  alias oldbrew=/usr/local/bin/brew
+else
+  echo "not ARM"
+  HOMEBREW_DIR="/usr/local"
+fi
+
+
 #AddPathTo "$HOME/.rvm/bin""
-AddPathTo "/opt/local/sbin"
-AddPathTo "/opt/local/bin"
-AddPathTo "/usr/local/sbin"
-AddPathTo "/usr/local/bin"
+AddPathTo "${HOMEBREW_DIR}/sbin"
+AddPathTo "${HOMEBREW_DIR}/bin"
 AddPathTo "/usr/texbin"
 AddPathTo "/Library/TeX/texbin"
 AddToPath "$HOME/bin"
 AddToPath "$HOME/fvm/default/bin"
 AddToPath "$HOME/.pub-cache/bin"
 AddToPath "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-AddToPath "/usr/local/texlive/2012"
 AddToPath "/usr/bin"
 AddToPath "/usr/sbin"
 AddToPath "/bin"
@@ -108,8 +118,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 eval "$(fasd --init auto)"
 
-test -e /usr/local/share/chruby/chruby.sh && source /usr/local/share/chruby/chruby.sh
-test -e /usr/local/share/chruby/auto.sh && source /usr/local/share/chruby/auto.sh
+test -e "${HOMEBREW_DIR}/share/chruby/chruby.sh" && source "${HOMEBREW_DIR}/share/chruby/chruby.sh"
+test -e "${HOMEBREW_DIR}/share/chruby/auto.sh" && source "${HOMEBREW_DIR}/share/chruby/auto.sh"
 test -e ~/.aliases && source ~/.aliases
 test -e "${HOME}/.zshrc.local" && source "${HOME}/.zshrc.local"
 test -e ~/.fastlane/completions/completion.sh && source ~/.fastlane/completions/completion.sh
