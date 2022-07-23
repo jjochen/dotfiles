@@ -1,5 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/bashrc.pre.bash" ]] && . "$HOME/.fig/shell/bashrc.pre.bash"
+# [[ -f "$HOME/.fig/shell/bashrc.pre.bash" ]] && . "$HOME/.fig/shell/bashrc.pre.bash"
 all_usernames="jjochen jochen Jochen pfeiffer jj"
 untrusted_hosts_with_sshkey=""
 
@@ -28,23 +28,20 @@ AddPathTo ()
   export PATH
 }
 
-#AddPathTo "$HOME/.rvm/bin"
-AddPathTo "/opt/local/sbin"
-AddPathTo "/opt/local/bin"
-AddPathTo "/usr/local/bin"
+AddPathTo "/opt/homebrew/sbin"
+AddPathTo "/opt/homebrew/bin"
 AddPathTo "/usr/texbin"
+AddPathTo "/Library/TeX/texbin"
 AddToPath "$HOME/bin"
-AddToPath "/usr/local/texlive/2012"
+AddToPath "$HOME/fvm/default/bin"
+AddToPath "$HOME/.pub-cache/bin"
+AddToPath "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 AddToPath "/usr/bin"
 AddToPath "/usr/sbin"
 AddToPath "/bin"
 AddToPath "/sw/bin"
 AddToPath "/sw/sbin"
 AddToPath "/sbin"
-AddToPath "/usr/bin/X11"
-AddToPath "/usr/X11R6/bin"
-AddToPath "/usr/games"
-
 
 QTDIR=/opt/local/lib/qt3; export QTDIR
 
@@ -685,4 +682,4 @@ test -d ~/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/bashrc.post.bash" ]] && . "$HOME/.fig/shell/bashrc.post.bash"
+# [[ -f "$HOME/.fig/shell/bashrc.post.bash" ]] && . "$HOME/.fig/shell/bashrc.post.bash"

@@ -1,3 +1,5 @@
+#! /bin/sh
+
 alias bf="bundle exec fastlane"
 alias bpi="bundle install && bundle exec pod install"
 alias bpu="gem install bundler && bundle update && bundle exec pod update"
@@ -7,4 +9,5 @@ alias vnc_buildserver1="open vnc://192.168.13.103"
 alias vnc_buildserver2="open vnc://192.168.13.104"
 alias ungit="git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached"
 alias fvf="fvm flutter"
+alias oldbrew="/usr/local/bin/brew"
 

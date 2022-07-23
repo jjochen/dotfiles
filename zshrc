@@ -1,5 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
+# [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -29,7 +29,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Customize to your needs...
 
@@ -41,7 +41,7 @@ export KALEIDOSCOPE_DIR=${HOME}/coden/kaleidoscope/Kaleidoscope-Bundle-Keyboardi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=(/opt/homebrew/share/zsh-completions $fpath)
 
 #autoload -U up-line-or-beginning-search
 #autoload -U down-line-or-beginning-search
@@ -75,22 +75,8 @@ AddPathTo ()
   export PATH
 }
 
-# Handle Mac platforms
-CPU=$(uname -p)
-HOMEBREW_DIR
-if [[ "$CPU" == "arm" ]]; then
-  echo "ARM"
-  HOMEBREW_DIR="/opt/homebrew"
-  alias oldbrew=/usr/local/bin/brew
-else
-  echo "not ARM"
-  HOMEBREW_DIR="/usr/local"
-fi
-
-
-#AddPathTo "$HOME/.rvm/bin""
-AddPathTo "${HOMEBREW_DIR}/sbin"
-AddPathTo "${HOMEBREW_DIR}/bin"
+AddPathTo "/opt/homebrew/sbin"
+AddPathTo "/opt/homebrew/bin"
 AddPathTo "/usr/texbin"
 AddPathTo "/Library/TeX/texbin"
 AddToPath "$HOME/bin"
@@ -103,9 +89,7 @@ AddToPath "/bin"
 AddToPath "/sw/bin"
 AddToPath "/sw/sbin"
 AddToPath "/sbin"
-AddToPath "/usr/bin/X11"
-AddToPath "/usr/X11R6/bin"
-AddToPath "/usr/games"
+
 
 
 function clang-format-ios {
@@ -129,4 +113,4 @@ zstyle :omz:plugins:ssh-agent identities id_rsa github_rsa
 unalias gm
 
 # Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+# [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"

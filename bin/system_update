@@ -1,4 +1,4 @@
-#!/usr/local/bin/zsh
+#!/bin/sh
 
 #set -e
 
@@ -8,9 +8,9 @@ sudo -v
 # Keep-alive: update existing sudo time stamp if set, otherwise do nothing.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-cd $HOME
+cd "$HOME" || exit
 
-echo '\n=== Update App Store ==='
+echo '=== Update App Store ==='
 sudo softwareupdate --install --restart --all --verbose
 
 echo '=== Update Homebrew ==='
@@ -23,6 +23,6 @@ brew bundle --global
 brew cleanup
 #mas upgrade
 
-echo '\n=== Update Janus ==='
+echo '=== Update Janus ==='
 curl -L https://bit.ly/janus-bootstrap | bash
 
