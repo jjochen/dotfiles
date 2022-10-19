@@ -1,0 +1,5 @@
+# Run with `bundle install --system --gemfile Gemfile.global` ### --system is deprecated
+source 'https://rubygems.org'
+
+gem 'bundler'
+gem 'xcode-install'

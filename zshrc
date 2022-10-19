@@ -91,22 +91,21 @@ AddToPath "/sw/sbin"
 AddToPath "/sbin"
 
 
-
 function clang-format-ios {
     echo "\Clang-Format all files in current dir except ones in */libs/* folder and names containing *.framework.*\n\n"
     find . -name "*.[hm]" ! -path "*/libs/*" ! -path "*.framework*" ! -path "*/Pods/*" -print0 | xargs -0 clang-format -i
     echo "\nDONE\n"
 }
 
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-eval "$(fasd --init auto)"
-
 test -e "${HOMEBREW_DIR}/share/chruby/chruby.sh" && source "${HOMEBREW_DIR}/share/chruby/chruby.sh"
 test -e "${HOMEBREW_DIR}/share/chruby/auto.sh" && source "${HOMEBREW_DIR}/share/chruby/auto.sh"
 test -e ~/.aliases && source ~/.aliases
 test -e "${HOME}/.zshrc.local" && source "${HOME}/.zshrc.local"
 test -e ~/.fastlane/completions/completion.sh && source ~/.fastlane/completions/completion.sh
+
+eval "$(zoxide init zsh)"
 
 zstyle :omz:plugins:ssh-agent identities id_rsa github_rsa
 
