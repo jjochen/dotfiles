@@ -36,6 +36,8 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+ulimit -S -n 2048
+
 export FASTLANE_USER=apple@jochen-pfeiffer.com
 export KALEIDOSCOPE_DIR=${HOME}/coden/kaleidoscope/Kaleidoscope-Bundle-Keyboardio/avr/libraries/Kaleidoscope
 
@@ -89,6 +91,17 @@ AddToPath "/bin"
 AddToPath "/sw/bin"
 AddToPath "/sw/sbin"
 AddToPath "/sbin"
+AddToPath "$HOME/.pub-cache/bin"
+
+
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+
+# default to Java 11
+java11
 
 
 function clang-format-ios {
@@ -113,3 +126,8 @@ unalias gm
 
 # Fig post block. Keep at the bottom of this file.
 # [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+## [Completion] 
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/jochen/.dart-cli-completion/zsh-config.zsh ]] && . /Users/jochen/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
