@@ -131,3 +131,5 @@ unalias gm
 [[ -f /Users/jochen/.dart-cli-completion/zsh-config.zsh ]] && . /Users/jochen/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+
+test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
