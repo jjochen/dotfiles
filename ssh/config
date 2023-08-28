@@ -77,7 +77,7 @@ Host flos
 
 Host databases
     Hostname 138.201.36.221
-    User jpfeiffer
+    User jpfeiffer 
     # 138.201.36.221 databases.esanum.de databases
 
 Host frontend

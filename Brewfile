@@ -1,7 +1,5 @@
 cask_args appdir: '/Applications'
 tap 'getsentry/tools'
-tap 'homebrew/cask'
-tap 'homebrew/cask-drivers'
 tap 'jjochen/cask'
 tap 'vapor/tap'
 tap 'dart-lang/dart'
