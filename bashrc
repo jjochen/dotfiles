@@ -683,3 +683,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Fig post block. Keep at the bottom of this file.
 # [[ -f "$HOME/.fig/shell/bashrc.post.bash" ]] && . "$HOME/.fig/shell/bashrc.post.bash"
+
+eval "$(pkgx --shellcode)"  #docs.pkgx.sh/shellcode
