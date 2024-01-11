@@ -52,7 +52,7 @@ fpath=(/opt/homebrew/share/zsh-completions $fpath)
 #bindkey "^[[A" up-line-or-beginning-search # Up
 #bindkey "^[[B" down-line-or-beginning-search # Down
 
-AddToPath ()
+function AddToPath ()
 # Add argument to $PATH if:
 # - it is not already present
 # - it is a directory
@@ -65,7 +65,7 @@ AddToPath ()
   export PATH
 }
 
-AddPathTo ()
+function AddPathTo ()
 # Add argument to $PATH if:
 # - it is not already present
 # - it is a directory
@@ -134,4 +134,8 @@ unalias gm
 [[ -f /Users/jochen/.dart-cli-completion/zsh-config.zsh ]] && . /Users/jochen/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
-source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
+# source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
