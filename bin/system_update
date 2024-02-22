@@ -26,3 +26,5 @@ brew cleanup
 echo '=== Update Janus ==='
 curl -L https://bit.ly/janus-bootstrap | bash
 
+echo '=== Configure fvm ==='
+fvm config --cache-path "$HOME/.fvm"

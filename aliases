@@ -9,5 +9,6 @@ alias vnc_buildserver1="open vnc://192.168.13.103"
 alias vnc_buildserver2="open vnc://192.168.13.104"
 alias ungit="git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached"
 alias fvf="fvm flutter"
+alias femr="fvm exec melos run"
 alias oldbrew="/usr/local/bin/brew"
 

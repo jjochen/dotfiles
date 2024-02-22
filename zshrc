@@ -77,12 +77,12 @@ function AddPathTo ()
   export PATH
 }
 
+AddPathTo "$HOME/.fvm/default/bin"
 AddPathTo "/opt/homebrew/sbin"
 AddPathTo "/opt/homebrew/bin"
 AddPathTo "/usr/texbin"
 AddPathTo "/Library/TeX/texbin"
 AddToPath "$HOME/bin"
-AddToPath "$HOME/fvm/default/bin"
 AddToPath "$HOME/.pub-cache/bin"
 AddToPath "$HOME/Library/Android/sdk/emulator"
 AddToPath "$HOME/Library/Android/sdk/tools"
