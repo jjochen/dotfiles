@@ -107,6 +107,11 @@ Host haproxy
     User jpfeiffer
     # 138.201.56.130 haproxy.esanum.de haproxy
 
+Host staging
+    Hostname 167.235.197.112
+    User jpfeiffer
+    #User runnerss
+
 # VMS
 
 Host as8
