@@ -28,3 +28,19 @@ curl -L https://bit.ly/janus-bootstrap | bash
 
 echo '=== Configure fvm ==='
 fvm config --cache-path "$HOME/.fvm"
+
+echo '=== Delete unavailable simulators ==='
+xcrun simctl delete unavailable''
+echo 'deleted'
+echo ''
+
+echo '=== Enable touch ID for sudo ==='
+if ! grep -q "pam_tid.so" "/etc/pam.d/sudo"; then
+    # Füge den Eintrag für 'pam_tid.so' in Zeile 3 ein
+    sudo sed -i '' '3i\
+auth       sufficient     pam_tid.so
+' "/etc/pam.d/sudo"
+    echo "Touch ID wurde in /etc/pam.d/sudo eingefügt."
+else
+    echo "Touch ID ist bereits in /etc/pam.d/sudo konfiguriert."
+fi
