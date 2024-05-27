@@ -20,6 +20,8 @@ brew update
 brew upgrade
 brew upgrade --cask
 brew bundle --global
+# brew bundle --global --force cleanup
+brew autoremove
 brew cleanup
 #mas upgrade
 
