@@ -12,7 +12,7 @@ AddToPath ()
 {
   _folder=$1
   echo " $PATH " | sed 's/:/ /g' | grep " $_folder " > /dev/null
-  [ $? -ne 0 ] && [ -d $_folder ] && [ -x $_folder ] && PATH=$PATH:$_folder
+  [ $? -ne 0 ] && [ -d "$_folder" ] && [ -x "$_folder" ] && PATH=$PATH:$_folder
   export PATH
 }
 
@@ -24,7 +24,7 @@ AddPathTo ()
 {
   _folder=$1
   echo " $PATH " | sed 's/:/ /g' | grep " $_folder " > /dev/null
-  [ $? -ne 0 ] && [ -d $_folder ] && [ -x $_folder ] && PATH=$_folder:$PATH
+  [ $? -ne 0 ] && [ -d "$_folder" ] && [ -x "$_folder" ] && PATH=$_folder:$PATH
   export PATH
 }
 
@@ -77,7 +77,7 @@ HOSTNAME=$(hostname 2>/dev/null || hostname -f)
 export HOST=${HOST:-${HOSTNAME%%.*}}
 TTY=$(tty); export TTY=${TTY#/dev/}   
 
-export HST=`hostname -s`
+export HST=$(hostname -s)
 
 export LC_COLLATE=C
 
@@ -138,7 +138,7 @@ fi
 type vim >/dev/null 2>&1 && {
     if eval [ -r "~$username/.vimrc" ]; then
         vicmd="vim -X -u ~$username/.vimrc"
-    elif [ -r $HOME/.vimrc ]; then
+    elif [ -r "$HOME"/.vimrc ]; then
         vicmd='vim -X -u $HOME/.vimrc'
     else
         vicmd='vim -X'
