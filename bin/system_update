@@ -20,7 +20,9 @@ brew update
 brew upgrade
 brew upgrade --cask
 brew bundle --global
-# brew bundle --global --force cleanup
+if [ "$1" = "--cleanup" ]; then
+    brew bundle --global --force cleanup
+fi
 brew autoremove
 brew cleanup
 #mas upgrade
